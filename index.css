@@ -1,0 +1,19 @@
+:root {
+  --main-bg-color: #000;
+  --primary-text-color: #ffffff;
+  --accent-color: #880808;
+  --main-font: "Roboto Mono", monospace, sans-serif;
+}
+
+/* Set Roboto Mono as the main font for code snippets */
+code,
+pre {
+  font-family: var(--main-font);
+}
+
+/* Set Roboto Mono or other suitable sans-serif font for body text */
+body {
+  font-family: var(--main-font);
+  background-color: var(--main-bg-color);
+  color: var(--primary-text-color);
+}
