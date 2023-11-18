@@ -5,15 +5,141 @@
   --main-font: "Roboto Mono", monospace, sans-serif;
 }
 
-/* Set Roboto Mono as the main font for code snippets */
 code,
 pre {
   font-family: var(--main-font);
 }
 
-/* Set Roboto Mono or other suitable sans-serif font for body text */
+html {
+  scroll-behavior: smooth;
+}
+
+h1:hover {
+  cursor: default;
+}
+
 body {
   font-family: var(--main-font);
   background-color: var(--main-bg-color);
   color: var(--primary-text-color);
+  margin: 0;
+  padding: 0;
+  height: 6000px;
+}
+
+/* Header section */
+header {
+  display: flex;
+  background-color: transparent;
+  height: 80px;
+  padding: 10px 26px;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  box-sizing: border-box;
+  z-index: 50;
+}
+
+.brand-text {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: var(--main-font);
+  margin-top: 0.67em; /* Example of default margin */
+  margin-bottom: 0.67em; /* Example of default margin */
+}
+
+.navigation-bar {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  margin-top: 0.7em;
+}
+
+nav a {
+  margin: 0 14px;
+  font-size: 22px;
+  color: var(--primary-text-color);
+  text-underline-offset: 4px;
+}
+
+nav a:hover {
+  text-underline-offset: 6px;
+  transition: all;
+}
+
+.social-media-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 6px;
+}
+.social-media-icons a {
+  margin-bottom: 8px;
+}
+
+/* Hero Banner */
+
+.hero-banner {
+  background-image: url("assets/images/Banner.JPG");
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 4rem;
+}
+
+.hero-banner-text-container {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.hero-banner-image-container {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-banner-image {
+  width: 50%;
+  max-width: 600px;
+  border-radius: 50%;
+}
+
+.hero-banner-title h1 {
+  overflow: hidden;
+  font-size: 32px;
+  white-space: nowrap;
+  border-right: 0.1em solid white;
+  margin: 0 auto 0 0;
+  letter-spacing: 0.15em;
+  animation:
+    typing 6.5s steps(41) infinite,
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0%,
+  100% {
+    width: 0;
+  }
+  45% {
+    width: 100%;
+  }
+  75% {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
 }
