@@ -18,20 +18,6 @@ h1:hover {
   cursor: default;
 }
 
-hr {
-  margin: 10vh auto;
-  width: 75vw;
-  border: none;
-  height: 4px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    var(--accent-color),
-    var(--accent-color),
-    transparent
-  );
-}
-
 body {
   font-family: var(--main-font);
   background-color: var(--main-bg-color);
@@ -46,9 +32,26 @@ body {
   display: flex;
   width: 50%;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
+}
+.breaker {
+  margin: 10vh auto;
+  width: 75vw;
+  border: none;
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--accent-color),
+    var(--accent-color),
+    transparent
+  );
 }
 
+.section-title {
+  color: var(--accent-color);
+  font-size: 42px;
+}
 .rounded-image {
   width: 50%;
   max-width: 600px;
@@ -119,6 +122,12 @@ nav a:hover {
   padding-left: 4rem;
 }
 
+.hero-image-container {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
 .hero-banner-text-container {
   display: flex;
   width: 50%;
@@ -165,13 +174,9 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 4rem;
+  padding: 4rem;
 }
 
-.about-title {
-  color: var(--accent-color);
-  font-size: 42px;
-}
 .about {
   height: 80vh;
   width: 100%;
@@ -183,4 +188,45 @@ nav a:hover {
   width: 50%;
   text-align: justify;
   font-size: 26px;
+}
+
+/* Work */
+.work-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4rem;
+}
+
+.work-article {
+  margin-top: 4rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.work-text-container {
+  width: 50%;
+}
+.work-title {
+  margin-top: 0;
+  font-size: 34px;
+}
+.work-text {
+  font-size: 22px;
+  text-align: justify;
+}
+.work-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 40px;
+}
+
+.work-article-bottom-line {
+  width: 100%;
+  margin-top: 18px;
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--accent-color));
 }
