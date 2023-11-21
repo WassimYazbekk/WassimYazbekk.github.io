@@ -14,6 +14,7 @@ html {
   scroll-behavior: smooth;
 }
 
+h3,
 h1:hover {
   cursor: default;
 }
@@ -24,7 +25,6 @@ body {
   color: var(--primary-text-color);
   margin: 0;
   padding: 0;
-  height: 6000px;
 }
 
 /* Common */
@@ -229,4 +229,13 @@ nav a:hover {
   border: none;
   height: 2px;
   background: linear-gradient(to right, transparent, var(--accent-color));
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px -6px 8px 1px var(--accent-color);
 }
